@@ -1,0 +1,47 @@
+{
+  "name": "webpack_bable_prod",
+  "version": "1.0.0",
+  "description": "Webpack Bable for Production",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "git": "git add . && git commit -m"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix"
+    ]
+  },
+  "author": "Bartlomiej Figatowski",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-dev-server": "^3.5.1",
+    "webpack-merge": "^5.7.2"
+  }
+}
