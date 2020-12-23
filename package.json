@@ -48,6 +48,7 @@
     "webpack-merge": "^5.7.2"
   },
   "dependencies": {
-    "darkmode-js": "^1.5.7"
+    "darkmode-js": "^1.5.7",
+    "redux": "^4.0.5"
   }
 }
