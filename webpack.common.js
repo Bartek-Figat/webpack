@@ -34,6 +34,13 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name][hash].[ext]',
+              outputPath: 'images',
+              publicPath: 'images',
+              emitFile: true,
+              esModule: false,
+            },
           },
         ],
       },
