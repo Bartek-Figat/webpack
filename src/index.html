@@ -4,210 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <title>Projekty witryn internetowych</title>
   </head>
   <body>
-
     <header>
-      <div class="container">
-          <nav class="nav">
-              <a href="index.html" class="logo">TOURS.</a>
-              <ul class="nav-list">
-                  <li>
-                      <a href="index.html" class="nav-link">Home</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-link">Pricing</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-link">Dates</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-link">Testimonials</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-link">Contact</a>
-                  </li>
-              </ul>
-          </nav>
+      <nav class="nav">
+        <h1 class="nav--brand__logo">Logo</h1>
+        <ul class="nav--container__list">
+          <li class="nav__item--link link">Start</li>
+          <li class="nav__item--link link">O mnie</li>
+          <li class="nav__item--link link">Kontakt</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="flex justify-center items-start flex-col hero--content">
+        <h2 class="hero--content__title">Tworzenie prawdziwej</h2>
+        <p class="hero--content__sub_title">wartości biznesowej</p>
+        <p class="hero--content__text">
+          Łącze wyobraźnię i technologię, aby pomóc markom rozwijać się w dobie
+          cyfrowej transformacji.
+        </p>
+        <button class="mt-6 hero--btn">Darmowa wycena</button>
       </div>
-  </header>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="relative bg-white overflow-hidden">
-      <div class="max-w-7xl mx-auto">
-        <div
-          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
-        >
-          
-
-          <div class="relative pt-6 px-4 sm:px-6 lg:px-8 navigation">
-            <nav
-              class="relative flex items-center justify-between sm:h-10 lg:justify-start"
-              aria-label="Global"
-            >
-              <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                <div class="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span class="sr-only">Workflow</span>
-                    <img
-                      class="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    />
-                  </a>
-                  <div class="-mr-2 flex items-center md:hidden">
-                    <button
-                      type="button"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                      id="main-menu"
-                      aria-haspopup="true"
-                    >
-                      <!-- Heroicon name: menu -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Strona główna</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">O mnie</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Kontakt</a>
-
-              </div>
-            </nav>
-          </div>
-
-          <div class="absolute top-0 inset-x-0 p-2 transition transform  md:hidden w-auto">
-            <div
-              class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
-            >
-              <div class="px-5 pt-4 flex items-center justify-between">
-                <div>
-                  <img
-                    class="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="-mr-2">
-                  <button
-                    type="button"
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 show-navigation"
-                  >
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-                  <a
-                    href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                    role="menuitem"
-                    >Strona glowna</a
-                  >
-
-                  <a
-                    href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                    role="menuitem"
-                    >O mnie</a
-                  >
-
-                  <a
-                    href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                    role="menuitem"
-                    >Kontakt</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <main
-            class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-          >
-            <div class="sm:text-center lg:text-left">
-              <h1
-                class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
-              >
-                <span class="block xl:inline">Tworzenie prawdziwej</span>
-                <span class="block text-indigo-600 xl:inline">wartości biznesowej</span>
-              </h1>
-              <p
-                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              >
-              Łącze wyobraźnię i technologię, aby pomóc markom rozwijać się w dobie cyfrowej
-                transformacji.
-              </p>
-              <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div class="rounded-md shadow">
-                  <a
-                    href="#"
-                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                  >
-                    Darmowa wycena
-                  </a>
-                </div>
-              </div>
-            </div>
-          </main>
-        </div>
-      </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div class="hero--img">
         <img
-          class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="https://images.unsplash.com/photo-1605907126332-53b63528ce99?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          alt="building websites"
+          class="hero--img__iner"
         />
       </div>
-    </div>
+    </section>
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <div class="py-12 bg-white mt-16">
+    <div class="py-12 bg-white mt-16 media-mt">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl text--start"
           >
             Strony internetowe
           </p>
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto text--start">
             Tworze i rozwijamy profesjonalne strony internetowe.
           </p>
         </div>
           </dl>
         </div>
       </div>
-    </div>
     <section class="text-gray-600 body-font -mt-16"">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
