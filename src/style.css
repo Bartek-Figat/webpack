@@ -36,9 +36,8 @@ header {
 }
 
 .nav--brand__logo {
-  font-size: 1.4rem;
-  display: flex;
-  align-self: center;
+  width: 60px;
+  height: 60px;
 }
 
 .nav--container__list {
