@@ -16,7 +16,7 @@ submit.addEventListener('click', async (e) => {
       message,
     };
     e.preventDefault();
-    const { data } = await axios.post('http://localhost:8080/post', { val });
+    const { data } = await axios.post('https://glacial-bastion-79508.herokuapp.com/', { val });
     if (data.msg === 'ok') {
       email.value = '';
       userName.value = '';
