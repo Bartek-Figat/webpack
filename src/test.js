@@ -15,6 +15,7 @@ function handleSignupFormSubmit(e) {
     passwordErrorMessageElement.innerText = passowrdErrorMessage;
   }
 }
+
 function validatePassword(password, minlength) {
   if (!password) return 'Password is required';
   if (password.length < minlength) {
@@ -30,6 +31,7 @@ function validatePassword(password, minlength) {
   }
   return '';
 }
+
 function validateEmail(email) {
   if (!email) return 'Email is required';
   const isValidEmail = /^\S+@\S+$/g;

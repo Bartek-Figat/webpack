@@ -59,6 +59,7 @@
     "webpack-merge": "^5.7.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "darkmode-js": "^1.5.7",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
