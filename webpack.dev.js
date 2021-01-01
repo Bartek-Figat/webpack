@@ -9,5 +9,6 @@ module.exports = merge(common, {
     contentBase: './dist',
     compress: true,
     port: 3000,
+    open: 'Chrome',
   },
 });
