@@ -3360,8 +3360,8 @@
             F = r(9315),
             R = r(8364),
             j = r(6997),
-            C = r(2803),
-            N = r(7462),
+            N = r(2803),
+            C = r(7462),
             L = r(2974),
             T = r(6852),
             D = r(5216),
@@ -3444,7 +3444,7 @@
                 },
               });
             },
-            Ct = function (t) {
+            Nt = function (t) {
               var e,
                 r,
                 n,
@@ -3468,7 +3468,7 @@
                 o[e] = f ? c(u[e], e) : u[e];
               return o;
             },
-            Nt = function () {
+            Ct = function () {
               for (var t = 0, e = arguments.length, r = It(this, e); e > t; ) r[t] = arguments[t++];
               return r;
             },
@@ -3651,7 +3651,7 @@
                       p = 0;
                     if (x(r)) {
                       if (!(r instanceof q || (s = b(r)) == H || s == V))
-                        return St in r ? Rt(h, r) : Ct.call(h, r);
+                        return St in r ? Rt(h, r) : Nt.call(h, r);
                       (i = r), (p = Ot(n, e));
                       var y = r.byteLength;
                       if (void 0 === o) {
@@ -3670,7 +3670,7 @@
                     i(function () {
                       new h(-1);
                     }) &&
-                    N(function (t) {
+                    C(function (t) {
                       new h(), new h(null), new h(1.5), new h(t);
                     }, !0)) ||
                   ((h = r(function (t, r, n, o) {
@@ -3686,7 +3686,7 @@
                             : new y(r)
                           : St in r
                           ? Rt(h, r)
-                          : Ct.call(h, r)
+                          : Nt.call(h, r)
                         : new y(g(r))
                     );
                   })),
@@ -3718,7 +3718,7 @@
                         y.of.call(h, 1);
                       }),
                   l,
-                  { from: Ct, of: Nt }
+                  { from: Nt, of: Ct }
                 ),
                 K in A || d(A, K, e),
                 a(a.P, l, Dt),
@@ -3747,7 +3747,7 @@
                   l,
                   { toLocaleString: Tt }
                 ),
-                (C[l] = P ? O : I),
+                (N[l] = P ? O : I),
                 n || P || d(A, yt, I);
             });
         } else t.exports = function () {};
@@ -3785,10 +3785,10 @@
           F = A.LN2,
           R = 'buffer',
           j = 'byteLength',
-          C = 'byteOffset',
-          N = o ? '_b' : R,
+          N = 'byteOffset',
+          C = o ? '_b' : R,
           L = o ? '_l' : j,
-          T = o ? '_o' : C;
+          T = o ? '_o' : N;
         function D(t, e, r) {
           var n,
             o,
@@ -3863,7 +3863,7 @@
         function V(t, e, r, n) {
           var o = p(+r);
           if (o + e > t[L]) throw M(b);
-          var i = t[N]._b,
+          var i = t[C]._b,
             a = o + t[T],
             u = i.slice(a, a + e);
           return n ? u : u.reverse();
@@ -3871,7 +3871,7 @@
         function K(t, e, r, n, o, i) {
           var a = p(+r);
           if (a + e > t[L]) throw M(b);
-          for (var u = t[N]._b, s = a + t[T], l = n(+o), c = 0; c < e; c++)
+          for (var u = t[C]._b, s = a + t[T], l = n(+o), c = 0; c < e; c++)
             u[s + c] = l[i ? c : e - c - 1];
         }
         if (a.ABV) {
@@ -3928,9 +3928,9 @@
                 o = f(e);
               if (o < 0 || o > n) throw M('Wrong offset!');
               if (o + (r = void 0 === r ? n - o : d(r)) > n) throw M('Wrong length!');
-              (this[N] = t), (this[T] = o), (this[L] = r);
+              (this[C] = t), (this[T] = o), (this[L] = r);
             }),
-            o && (H(x, j, '_l'), H(S, R, '_b'), H(S, j, '_l'), H(S, C, '_o')),
+            o && (H(x, j, '_l'), H(S, R, '_b'), H(S, j, '_l'), H(S, N, '_o')),
             s(S.prototype, {
               getInt8: function (t) {
                 return (V(this, 1, t)[0] << 24) >> 24;
@@ -5086,7 +5086,7 @@
             var e;
             return !(!d(t) || 'function' != typeof (e = t.then)) && e;
           },
-          C = function (t, e) {
+          N = function (t, e) {
             if (!t._n) {
               t._n = !0;
               var r = t._c;
@@ -5123,11 +5123,11 @@
 
                 )
                   a(r[i++]);
-                (t._c = []), (t._n = !1), e && !t._h && N(t);
+                (t._c = []), (t._n = !1), e && !t._h && C(t);
               });
             }
           },
-          N = function (t) {
+          C = function (t) {
             y.call(s, function () {
               var e,
                 r,
@@ -5168,7 +5168,7 @@
               ((e = e._w || e)._v = t),
               (e._s = 2),
               e._a || (e._a = e._c.slice()),
-              C(e, !0));
+              N(e, !0));
           },
           Z = function (t) {
             var e,
@@ -5186,7 +5186,7 @@
                         D.call(n, t);
                       }
                     })
-                  : ((r._v = t), (r._s = 1), C(r, !1));
+                  : ((r._v = t), (r._s = 1), N(r, !1));
               } catch (t) {
                 D.call({ _w: r, _d: !1 }, t);
               }
@@ -5218,7 +5218,7 @@
                 (r.domain = P ? w.domain : void 0),
                 this._c.push(r),
                 this._a && this._a.push(r),
-                this._s && C(this, !1),
+                this._s && N(this, !1),
                 r.promise
               );
             },
@@ -6173,8 +6173,8 @@
           F = O.f,
           R = w.f,
           j = n.Symbol,
-          C = n.JSON,
-          N = C && C.stringify,
+          N = n.JSON,
+          C = N && N.stringify,
           L = p('_hidden'),
           T = p('toPrimitive'),
           D = {}.propertyIsEnumerable,
@@ -6328,14 +6328,14 @@
             return E.f(b(t));
           },
         }),
-          C &&
+          N &&
             a(
               a.S +
                 a.F *
                   (!G ||
                     l(function () {
                       var t = j();
-                      return '[null]' != N([t]) || '{}' != N({ a: t }) || '{}' != N(Object(t));
+                      return '[null]' != C([t]) || '{}' != C({ a: t }) || '{}' != C(Object(t));
                     })),
               'JSON',
               {
@@ -6348,7 +6348,7 @@
                           if (('function' == typeof r && (e = r.call(this, t, e)), !K(e))) return e;
                         }),
                       (n[1] = e),
-                      N.apply(C, n)
+                      C.apply(N, n)
                     );
                 },
               }
@@ -7667,8 +7667,8 @@
           F = Gt(r(9019)),
           R = Gt(r(3590)),
           j = Gt(r(6826)),
-          C = Gt(r(2828)),
-          N = Gt(r(937)),
+          N = Gt(r(2828)),
+          C = Gt(r(937)),
           L = Bt(r(9146)),
           T = Gt(r(5218)),
           D = Gt(r(7117)),
@@ -7721,8 +7721,8 @@
           Ft = Gt(r(5152)),
           Rt = Gt(r(4816)),
           jt = Gt(r(8035)),
-          Ct = Gt(r(4714)),
-          Nt = Gt(r(4928)),
+          Nt = Gt(r(4714)),
+          Ct = Gt(r(4928)),
           Lt = Gt(r(8346)),
           Tt = Gt(r(2900)),
           Dt = Gt(r(8220)),
@@ -7788,8 +7788,8 @@
           isVariableWidth: F.default,
           isMultibyte: R.default,
           isSemVer: j.default,
-          isSurrogatePair: C.default,
-          isInt: N.default,
+          isSurrogatePair: N.default,
+          isInt: C.default,
           isIMEI: E.default,
           isFloat: L.default,
           isFloatLocales: L.locales,
@@ -7844,8 +7844,8 @@
           escape: Ft.default,
           unescape: Rt.default,
           stripLow: jt.default,
-          whitelist: Ct.default,
-          blacklist: Nt.default,
+          whitelist: Nt.default,
+          blacklist: Ct.default,
           isWhitelisted: Lt.default,
           normalizeEmail: Tt.default,
           toString,
@@ -12355,7 +12355,7 @@
         u.done ? e(s) : Promise.resolve(s).then(n, o);
       }
       var a = document.querySelector('#submit'),
-        u = (document.querySelector('#loading'), document.querySelector('#signupForm')),
+        u = document.querySelector('#signupForm'),
         s = document.querySelector('#useremail'),
         l = document.querySelector('#userfullname'),
         c = document.querySelector('#message'),
@@ -12413,12 +12413,12 @@
                               e().post('https://glacial-bastion-79508.herokuapp.com/', { val: y })
                             );
                           case 12:
-                            202 !== t.sent.data.msg[0].statusCode
+                            422 === t.sent.data.status
                               ? ((s.value = ''), (l.value = ''), (c.value = ''))
                               : ((f.style.display = 'flex'),
                                 setTimeout(function () {
                                   f.style.display = 'none';
-                                }, 6e3),
+                                }, 5e3),
                                 (s.value = ''),
                                 (l.value = ''),
                                 (c.value = '')),
