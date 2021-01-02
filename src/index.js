@@ -4,7 +4,6 @@ import validator from 'validator';
 import './style.css';
 
 const submit = document.querySelector('#submit');
-const loading = document.querySelector('#loading');
 const signupForm = document.querySelector('#signupForm');
 const email = document.querySelector('#useremail');
 const userName = document.querySelector('#userfullname');
@@ -39,7 +38,7 @@ submit.addEventListener('click', async (e) => {
     }
     const { data } = await axios.post('https://glacial-bastion-79508.herokuapp.com/', { val });
 
-    if (data.msg[0].statusCode !== 202) {
+    if (data.status === 422) {
       email.value = '';
       userName.value = '';
       msg.value = '';
@@ -47,7 +46,7 @@ submit.addEventListener('click', async (e) => {
       success.style.display = 'flex';
       setTimeout(function () {
         success.style.display = 'none';
-      }, 6000);
+      }, 5000);
       email.value = '';
       userName.value = '';
       msg.value = '';
